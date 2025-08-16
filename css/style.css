@@ -1,0 +1,283 @@
+*, html {
+  margin: 1;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c9c9e7;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  
+}
+
+.navbar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.navbar nav ul {
+  display: flex;
+  list-style: none;
+  
+  
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: #333333;
+  border: 1px solid #333;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar nav ul li a:hover {
+  background-color: #3143eb;
+  color: #fff;
+}
+
+#home-page{
+  position: relative;
+  min-height: clamp(400px, 40vh, 500px);
+  padding: 15px 10px;
+  color: #fff;
+  isolation: isolate;
+  background-image: url(https://axiooworld.com/uploads/posts/laptop-5-jutaan-buat-ngoding-1745994558.png?fit=crop&h=479&w=1547&s=a9e7f145eb1675d3e8870e9a82640559);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#home-page h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 10px;
+}
+
+#home-page p {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  margin-bottom: 20px;
+}
+
+#our-profile {
+  text-align: center;
+  height: auto;
+  min-height: 400px;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+#our-profile h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#our-profile h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#our-profile p {
+  font-size: 1.5rem;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+  
+}
+
+/* Section Portofolio */
+.portofolio {
+  background: #9e9eeb;                
+  padding: 60px 20px;
+  border-radius: 10px;
+  max-width: 1300px;
+  margin: 40px auto;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1); /* bayangan lebih jelas */
+  text-align: center;              
+}
+
+/* Container Grid Project */
+.portofolio-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  justify-content: center;
+  justify-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Kartu Project */
+.project {
+  max-width: 400px;
+  width: 100%;
+  background-color: #dddde4;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  margin-bottom: 40px;
+}
+
+/* Gambar Project */
+.project img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+/* Judul Section */
+.portofolio h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #333;
+}
+
+/* Judul Project */
+.project h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #222;
+}
+
+/* Deskripsi Project */
+.project p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* Tombol */
+.project .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #3143eb;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid #3143eb;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.project .btn:hover {
+  background-color: #3143eb;
+  color: #fff;
+}
+
+/* SECTION CONTAINER */
+#massage-us {
+  background: #e6e6fa; /* biar nyambung sama theme atas */
+  padding: 50px 20px;
+  border-radius: 10px;
+  margin: 30px auto;
+  max-width: 800px;   /* biar ga terlalu full, tetap tengah */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* TITLE */
+#massage-us h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+/* FORM */
+#massage-us form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;   /* kasih jarak antar elemen */
+}
+
+/* LABEL */
+#massage-us label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+/* INPUT, TEXTAREA */
+#massage-us input,
+#massage-us textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* GENDER GROUP */
+#massage-us .gender-group {
+  display: flex;
+  gap: 30px;
+  margin-top: 5px;
+}
+
+/* BUTTON */
+#massage-us button {
+  padding: 12px;
+  background: #fff;
+  color: #3143eb;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#massage-us button:hover {
+  background-color: #3143eb;
+  color: #fff;
+}
+
+/* OUTPUT BOX */
+#output {
+  margin-top: 20px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  
+}
+
+.footer {
+  background-color: #3143eb;  /* warna biru utama */
+  color: #181717;                /* teks putih */
+  text-align: center;         
+  padding: 20px 10px;         
+  margin-top: 40px;           
+  font-size: 0.9rem;
+  z-index: 1000;
+}
+
+.footer p {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+

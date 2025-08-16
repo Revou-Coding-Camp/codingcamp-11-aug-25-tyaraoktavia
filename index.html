@@ -12,17 +12,106 @@
     
     <!-- Main Header -->
     <header>
-        
+        <div class="navbar">
+            <img src="https://i.pinimg.com/1200x/99/78/bf/9978bfdd8bc0928cf1152ed0795d969e.jpg" alt="Tyara logo with a smiling cartoon character wearing glasses, set against a soft pastel background, conveying a cheerful and friendly mood" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Our Profile</a></li>
+                    <li><a href="#projects">Portofolio</a></li>
+                    <li><a href="#massage">Message Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
+    <hr>
 
     <!-- Main Content -->
     <main>
+        <!-- Home -->
+        <section id="home-page">
+            <div class="center-content">
+                <h1>Welcome <span id="user-greeting"></span> to Portofolio Tyara Oktavia</h1>
+            </div>
+        </section>
 
+        <hr>
+
+        <!-- Our Profile -->
+        <section id="our-profile">
+            <header>
+                <h1>Our Profile</h1>
+            </header>
+            <p>Saya merupakan mahasiswa semester 5 Program Studi Sistem Informasi di Universitas Bina Sarana Informatika, Kampus Kota Tegal. Memiliki minat dalam pengembangan aplikasi web dan mobile, serta menguasai dasar-dasar pemrograman, pengelolaan basis data, dan desain antarmuka pengguna (UI/UX). Keterampilan teknis yang dimiliki meliputi HTML, CSS, JavaScript, PHP, Laravel, MySQL, Git, dan GitHub, dengan pemahaman UI/UX yang mendukung proses pengembangan aplikasi yang fungsional dan user-friendly.</p>
+
+            <h2>Visi</h2>
+            <p>Menciptakan software yang tidak hanya berjalan dengan baik, tetapi juga membuat pengguna merasa puas dan nyaman saat menggunakannya.</p>
+
+            <h2>Misi</h2>
+            <p>Selalu mengikuti perkembangan teknologi, mengerjakan proyek-proyek nyata, dan memberikan kontribusi pada solusi digital yang berguna bagi banyak orang.</p>
+        </section>
+
+        <hr>
+
+        <!-- Portofolio -->
+        <section id="portofolio">
+            <div class="portofolio">
+                <header>
+                <h1>Portofolio</h1>
+            </header>
+            <div class="portofolio-container">
+                <div class="project">
+                <img src="https://i.pinimg.com/736x/c9/78/80/c978806cc726521fc6329840d4822b04.jpg" alt="Project 1" style="width: 200px; height: 200px; border-radius: 10px; object-fit: cover;">
+                <h2>Project 1</h2>
+                <p>Website E-commerce Tanaman Hias</p>
+                <a href="https://github.com/tyaraoktavia/webtanamanhias" target="_blank" class="btn" >View Details</a>
+                </div>
+
+                <div class="project">
+                <img src="https://i.pinimg.com/736x/ae/5c/94/ae5c94326f7206a4da498ed211735b43.jpg" alt="Project 1" style="width: 200px; height: 200px; border-radius: 10px; object-fit: cover;">
+                <h2>Project 2</h2>
+                <p>Website Warteg Online</p>
+                <a href="https://github.com/tyaraoktavia/wartegonline" target="_blank" class="btn" >View Details</a>
+                </div>
+            </div>
+            </div>
+            
+        </section>
+
+        <hr>
+
+        <!-- Message Us -->
+        <section id="massage-us">
+        <h2>Massage Us</h2>
+        <form id="massage-us-form">
+            <label>Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label>Tanggal Lahir:</label>
+            <input type="date" id="tanggalLahir" required>
+
+            <label>Jenis Kelamin:</label>
+            <div class="gender-group">
+                <label><input type="radio" name="gender" value="Laki-laki" required>Laki-laki</label>
+                <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+            </div>
+
+            <label>Pesan:</label>
+            <textarea id="pesan" name="pesan" placeholder="Tulis pesan Anda..." required></textarea>
+
+            <button type="submit">Kirim Pesan</button>
+        </form>
+
+        <!-- OUTPUT -->
+            <div id="output" class="output-box"></div>
+        </section>
     </main>
 
+    <hr>
     <!-- Footer -->
-    <footer>
-
+    <footer class="footer">
+        <p>&copy; 2025 Portfolio Tyara Oktavia. All rights reserved.</p>
     </footer>
     
     
